@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Game</title>
+
+</head>
+
+<body>
+
+    <div class="container my-5 OpenPage">
+        <div class="row d-flex justify-content-center ">
+            <div class="col-8 mb-5">
+                <div class="jumbotron bg-dark text-light py-5">
+                    <h1 class="display-4 text-center" id="totalPoint">Total point : 0</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center mt-4">
+            <div class="col-3">
+                <button class="btn btn-dark btn-block shadow" id="startButton">
+                    <span class="h2 ">
+                        Start
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-4">
+            <div class="col-3">
+                <button class="btn btn-dark btn-block shadow" id="exitButton">
+                    <span class="h2">
+                        Exit
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5" id="questionPage">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid bg-dark text-center text-light mb-5" >
+                      <h1 class="display-4 font-weight-bold" id="questionNum"></h1>
+                      <p class="h4" id="questionTitle"></p>
+                  </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header bg-dark text-light h4 classA">
+                             A)
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item" id="choiseA"></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header bg-dark text-light h4 classB">
+                             B)
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item" id="choiseB"></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header bg-dark text-light h4 classC">
+                             C)
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item" id="choiseC"></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
