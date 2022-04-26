@@ -52,6 +52,8 @@ $(document).ready(() => {
         }
     ];
 
+    var arr = gameQuestion.length;
+
     questionPage = $("#questionPage");
     questionPage.hide();
 
@@ -106,10 +108,10 @@ $(document).ready(() => {
             }
             this.nextQuestion++;
             
-            if (this.nextQuestion === 5) {
+            if (this.nextQuestion === arr) {
                 OpenPage.show();
                 questionPage.hide();
-                this.nextQuestion -=5 ;
+                this.nextQuestion -=arr ;
                 totalPoint.html(`Total Point: ${this.point}`);
                 this.point = 0;
             }
