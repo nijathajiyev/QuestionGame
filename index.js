@@ -1,54 +1,44 @@
 $(document).ready(() => {
 
     var gameQuestion = [{
-            q: {
                 question: "What do you call people who are 18+ ?",
                 num: "Question: 1",
                 A: "Baby",
                 B: "Adult",
                 C: "Person",
                 answer: "b"
-            }
         },
         {
-            q: {
                 num: "Question: 2",
                 question: "What color is the tree?",
                 A: "Red",
                 B: "Brown",
                 C: "Green",
                 answer: "c"
-            }
         },
         {
-            q: {
                 num: "Question: 3",
                 question: "What do you call someone who has a wife?",
                 A: "Wife",
                 B: "Husband",
                 C: "Married",
                 answer: "c"
-            }
         },
         {
-            q: {
                 num: "Question: 4",
                 question: "Which is the most us level in English?",
                 A: "B1",
                 B: "C2",
                 C: "A2",
                 answer: "b"
-            }
         },
         {
-            q: {
                 num: "Question: 5",
                 question: "What color is the sky?",
                 A: "Blue",
                 B: "Yellow",
                 C: "Green",
                 answer: "a"
-            }
         }
     ];
 
@@ -91,11 +81,11 @@ $(document).ready(() => {
         }
 
         startGame() {
-            this.questionNum.html(this.questions[this.nextQuestion].q.num)
-            this.questionTitle.html(this.questions[this.nextQuestion].q.question)
-            this.choiseA.html(this.questions[this.nextQuestion].q.A)
-            this.choiseB.html(this.questions[this.nextQuestion].q.B)
-            this.choiseC.html(this.questions[this.nextQuestion].q.C)
+            this.questionNum.html(this.questions[this.nextQuestion].num)
+            this.questionTitle.html(this.questions[this.nextQuestion].question)
+            this.choiseA.html(this.questions[this.nextQuestion].A)
+            this.choiseB.html(this.questions[this.nextQuestion].B)
+            this.choiseC.html(this.questions[this.nextQuestion].C)
         }
 
         correctOrWrong(cb) {
@@ -103,7 +93,7 @@ $(document).ready(() => {
                 alert("A B C hərflərindən birini seçin");
                 return;
             }
-            if (this.questions[this.nextQuestion].q.answer === cb) {
+            if (this.questions[this.nextQuestion].answer === cb) {
                 this.point++;
             }
             this.nextQuestion++;
